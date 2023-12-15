@@ -1,0 +1,5 @@
+node_modules
+.prettierrc
+README-template.md
+README.md
+style-guide.md

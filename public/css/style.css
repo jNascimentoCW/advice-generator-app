@@ -1,0 +1,120 @@
+:root {
+  --bg-color: #202632;
+  --card-bg: #303a48;
+  --txt-color: #cde2e8;
+  --green-color: #53feab;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.advice-card {
+  background-color: var(--card-bg);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 15px;
+  min-height: 45vh;
+  width: 40vw;
+  position: relative;
+  padding: 2.2rem;
+}
+
+.advice-id {
+  position: absolute;
+  top: 50px;
+  color: var(--green-color);
+  letter-spacing: 3px;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.advice-txt {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--txt-color);
+}
+
+.horizontal-bar-img {
+  position: absolute;
+  bottom: 70px;
+  width: 85%;
+}
+
+a .advice-generator {
+  position: absolute;
+}
+
+.advice-generator {
+  background-color: #53feab;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -25.7px;
+  cursor: pointer;
+}
+
+.advice-generator:hover {
+  box-shadow: 0 0 10px var(--green-color), 0 0 30px var(--green-color), 0 0 50px var(--green-color);
+}
+
+.advice-generator > img {
+  margin: 17px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 20px;
+  font-size: 0.9rem;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+@media (max-width: 500px) {
+  .advice-txt {
+    font-size: 1rem;
+  }
+
+  .advice-card {
+    width: 75vw;
+  }
+
+  .attribution > p {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .advice-txt {
+    font-size: 1.3rem;
+  }
+
+  .advice-card {
+    width: 50vw;
+  }
+
+  .attribution > p {
+    font-size: 0.7rem;
+  }
+}
